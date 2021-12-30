@@ -81,10 +81,6 @@ body .showcase li .seat.selected {
   background-color: #6feaf6;
 }
 
-body .showcase li .seat.selected {
-  background-color: #6feaf6;
-}
-
 body .showcase li .seat:not(.occupied):hover {
   cursor: default;
   -webkit-transform: scale(1);
@@ -139,5 +135,9 @@ body .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+body .container .row .seat.selected {
+  background-color: #6feaf6;
 }
 /*# sourceMappingURL=style.css.map */

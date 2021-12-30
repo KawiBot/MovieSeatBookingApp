@@ -53,9 +53,6 @@ body {
       .seat.selected {
         background-color: #6feaf6;
       }
-      .seat.selected {
-        background-color: #6feaf6;
-      }
       .seat:not(.occupied):hover {
         cursor: default;
         transform: scale(1);
@@ -97,6 +94,10 @@ body {
     }
     .row {
       display: flex;
+
+      .seat.selected {
+        background-color: #6feaf6;
+      }
     }
   }
 }
