@@ -90,6 +90,37 @@ body .showcase li .seat:not(.occupied):hover {
           transform: scale(1);
 }
 
+body .cart {
+  list-style-type: none;
+  position: absolute;
+  top: 50px;
+  right: 350px;
+}
+
+body .cart img {
+  width: 60px;
+}
+
+body .cart .cart-button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+body .cart .cart-button:hover {
+  opacity: 0.9;
+}
+
+body .cart .cart-button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .cart li {
+  list-style-type: none;
+}
+
 body .seat {
   background-color: #444451;
   height: 12px;
@@ -204,5 +235,17 @@ body .snack-container .snacks img:active {
 body .snack-container .snacks span {
   text-align: center;
   display: block;
+}
+
+body .snack-container .snacks p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

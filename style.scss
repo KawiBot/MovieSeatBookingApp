@@ -60,6 +60,30 @@ body {
       }
     }
   }
+  .cart {
+    list-style-type: none;
+    position: absolute;
+    top: 50px;
+    right: 350px;
+    img {
+      width: 60px;
+    }
+    .cart-button {
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      &:hover {
+        opacity: 0.9;
+      }
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+    li {
+      list-style-type: none;
+    }
+  }
   .seat {
     background-color: #444451;
     height: 12px;
@@ -120,6 +144,9 @@ body {
       text-align: center;
     }
     .snacks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       #skittles {
         width: 225px;
       }
@@ -130,7 +157,6 @@ body {
         height: 150px;
         width: 100px;
         margin: 0 30px;
-
         &:hover {
           opacity: 0.7;
           transition: opacity 0.3s ease-in-out;
@@ -139,12 +165,14 @@ body {
           transform: scale(1.1);
         }
       }
-      display: flex;
-      align-items: center;
-      justify-content: center;
       span {
         text-align: center;
         display: block;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
