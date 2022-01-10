@@ -13,8 +13,8 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
   p.text {
+    margin-top: 30px;
     span {
       color: #6feaf6;
     }
@@ -112,6 +112,31 @@ body {
 
       &:active {
         transform: scale(0.95);
+      }
+    }
+  }
+  .snack-container {
+    h2 {
+      text-align: center;
+    }
+    .snacks {
+      #skittles {
+        width: 225px;
+      }
+      #fountain-drink {
+        width: 120px;
+      }
+      img {
+        height: 225px;
+        width: 150px;
+        margin: 0 30px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        text-align: center;
+        display: block;
       }
     }
   }

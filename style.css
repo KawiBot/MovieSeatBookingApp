@@ -23,7 +23,10 @@ body {
           justify-content: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+}
+
+body p.text {
+  margin-top: 30px;
 }
 
 body p.text span {
@@ -155,5 +158,40 @@ body .container .btn {
 body .container .btn:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+body .snack-container h2 {
+  text-align: center;
+}
+
+body .snack-container .snacks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .snack-container .snacks #skittles {
+  width: 225px;
+}
+
+body .snack-container .snacks #fountain-drink {
+  width: 120px;
+}
+
+body .snack-container .snacks img {
+  height: 225px;
+  width: 150px;
+  margin: 0 30px;
+}
+
+body .snack-container .snacks span {
+  text-align: center;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

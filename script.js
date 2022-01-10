@@ -1,3 +1,6 @@
+//TODO: Add snacks system and cart system
+//Snacks system: Container w/ list of items that can be scrolled through and chosen. When left clicked add item to cart and when right clicked remove it. Each snack will contain price of the item, picture of the item, and the title.
+// Cart system: Button when clicked creates a drop-down menu of items that have been added to the cart. Including price of the item, a picture of the item, and the title.
 const movieSelect = document.getElementById("movie");
 const container = document.querySelector(".container");
 const seats = document.querySelectorAll(".row .seat:not(.occupied)");
