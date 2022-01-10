@@ -185,9 +185,20 @@ body .snack-container .snacks #fountain-drink {
 }
 
 body .snack-container .snacks img {
-  height: 225px;
-  width: 150px;
+  height: 150px;
+  width: 100px;
   margin: 0 30px;
+}
+
+body .snack-container .snacks img:hover {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body .snack-container .snacks img:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body .snack-container .snacks span {

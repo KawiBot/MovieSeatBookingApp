@@ -7,6 +7,7 @@ const seats = document.querySelectorAll(".row .seat:not(.occupied)");
 const count = document.getElementById("count");
 const total = document.getElementById("total");
 const clearBtn = document.getElementById("btn");
+const popcornBtn = document.getElementById("popcorn");
 populateUI();
 let ticketPrice = +movieSelect.value;
 
@@ -46,6 +47,7 @@ function updateSelectedCount() {
   count.innerText = selectedSeatsCount;
   total.innerText = selectedSeatsCount * ticketPrice;
 }
+// Event listeners
 // Movie select event
 
 movieSelect.addEventListener("change", (e) => {
@@ -74,5 +76,11 @@ clearBtn.addEventListener("click", () => {
   // Revert local storage back to default
   localStorage.setItem("selectedMovieIndex", 0);
 });
+
+// Adding snacks to cart uses two functions. Right click to add an item to the cart and left click to remove it.
+
+// Add popcorn to cart event
+// 'click' is left mouse button
+// 'contextmenu' is right mouse button
 //Initial count and total set
 updateSelectedCount();
